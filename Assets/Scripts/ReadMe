@@ -1,0 +1,37 @@
+API for Mixing Ingredients and Creating Potions
+This API provides functionality for mixing various ingredients to create potions with different effects.
+
+How to Use
+
+1. Initialization
+To use the API, create an instance of the `PotionMixer` class. You can do this as follows:
+
+PotionMixer potionMixer = new PotionMixer();
+
+2. Prepare Ingredients
+Create ingredients containing preliminary effects. For example:
+
+IIngredient<IPreliminaryEffect> ingredient1 = new Ingredient1();
+IIngredient<IPreliminaryEffect> ingredient2 = new Ingredient2();
+List<IIngredient<IPreliminaryEffect>> ingredients = new List<IIngredient<IPreliminaryEffect>>
+{
+    ingredient1,
+    ingredient2,
+};
+
+3. Create a Potion
+Use the Mix() method to mix the ingredients and create a potion:
+
+var potion = potionMixer.Mix(ingredients);
+
+Extending Functionality
+The API allows extending functionality by adding new effects, effect groups, and rules for their combination.
+
+1. Adding New Effects
+To add new effects, create classes that implement the IPreliminaryEffect interface, depending on the type of effect.
+
+2. Adding New Effect Groups
+To add new effect groups, create an enum PreliminaryEffectGroup and use them to classify effects.
+
+3. Adding New Combination Rules
+Extending the functionality of combining effects is achieved by creating classes that implement the IRule interface. These classes can define specific rules for combining effect groups.

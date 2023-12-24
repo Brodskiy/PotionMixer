@@ -1,0 +1,17 @@
+{
+    "name": "PotionMixer.Abstraction",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e532bef3ec4041708901486cd846347f",
+        "GUID:f0def9e428ea470aadd1dddc579bcbff"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
